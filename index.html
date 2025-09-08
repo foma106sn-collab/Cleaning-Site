@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Виїзна Хімчистк@ | Візитівка</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Виїзна Хімчистка</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('3fd0155f-379b-47c1-9e60-55d4147dfe8b.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .bg-overlay {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  </style>
 </head>
-<body class="bg-gray-90 font-sans">
-  <!-- Візитівка -->
-  <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white text-center py-12 shadow-lg">
-    <h1 class="text-4xl font-bold mb-4">Виїзна хімчистка</h1>
-    <p class="text-lg">Авто • М'які меблі • Килими</p>
-    <p class="mt-4 text-xl">Телефон: <strong>+380 93 719 06 74</strong></p>
+<body class="text-white">
+
+  <!-- Головний блок -->
+  <header class="bg-overlay py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Виїзна хімчистка авто, меблів та килимів</h1>
+      <p class="text-xl mb-6">Професійно. Швидко. Виїзд у зручний час!</p>
+      <a href="#contact" class="bg-green-500 px-6 py-3 rounded-full font-bold hover:bg-green-400 transition">Замовити</a>
+    </div>
   </header>
 
-  <!-- Процес роботи -->
-  <section class="py-12 max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Наш процес роботи</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1597006030711-5e4318d03d40?auto=format&fit=crop&w=800&q=80" alt="Хімчистка авто" class="w-full h-56 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-xl font-semibold mb-2">Хімчистка авто</h3>
-          <p>Глибоке очищення салону, сидінь та килимків.</p>
-        </div>
+  <!-- Переваги -->
+  <section class="bg-overlay py-12">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 rounded-xl border border-white">
+        <h3 class="text-xl font-bold mb-2">Виїзд у зручний час</h3>
+        <p>Приїдемо додому чи в офіс у будь-який день.</p>
       </div>
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1588776814546-418e9a3cdcbf?auto=format&fit=crop&w=800&q=80" alt="Хімчистка меблів" class="w-full h-56 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-xl font-semibold mb-2">Хімчистка меблів</h3>
-          <p>Повертаємо свіжість диванам, кріслам та стільцям.</p>
-        </div>
+      <div class="p-6 rounded-xl border border-white">
+        <h3 class="text-xl font-bold mb-2">Професійна техніка</h3>
+        <p>Використовуємо якісні та безпечні засоби.</p>
       </div>
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1584432810601-6b2b3d4c2b7b?auto=format&fit=crop&w=800&q=80" alt="Хімчистка килимів" class="w-full h-56 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-xl font-semibold mb-2">Хімчистка килимів</h3>
-          <p>Очищення будь-яких килимів прямо у вас вдома.</p>
+      <div class="p-6 rounded-xl border border-white">
+        <h3 class="text-xl font-bold mb-2">Швидкий результат</h3>
+        <p>Хімчистка за кілька годин, без черг та сервісів.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Послуги -->
+  <section class="bg-overlay py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Послуги та ціни</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 border border-white rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Хімчистка авто</h3>
+          <p class="mb-4">Від 800 грн</p>
+        </div>
+        <div class="p-6 border border-white rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Хімчистка меблів</h3>
+          <p class="mb-4">Від 300 грн/місце</p>
+        </div>
+        <div class="p-6 border border-white rounded-xl">
+          <h3 class="text-xl font-bold mb-2">Хімчистка килимів</h3>
+          <p class="mb-4">Від 150 грн/м²</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Контакти -->
-  <footer class="bg-blue-700 text-white py-6 text-center">
-    <p class="text-lg">Телефонуйте: <strong>+380 93 719 06 74 </strong></p>
-    <p class="text-sm mt-2">© 2025 Виїзна хімчистка. Всі права захищені.</p>
+  <section id="contact" class="bg-overlay py-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Залишити заявку</h2>
+      <p class="mb-4">Телефонуйте: <strong>+380 XX XXX XX XX</strong></p>
+      <form class="space-y-4 max-w-md mx-auto">
+        <input type="text" placeholder="Ваше ім'я" class="w-full p-3 rounded text-black" required>
+        <input type="tel" placeholder="Телефон" class="w-full p-3 rounded text-black" required>
+        <textarea placeholder="Ваше замовлення" class="w-full p-3 rounded text-black" rows="4"></textarea>
+        <button type="submit" class="bg-green-500 px-6 py-3 rounded-full font-bold hover:bg-green-400 transition">Надіслати</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black bg-opacity-80 text-white py-6 text-center">
+    <p>© 2025 Виїзна Хімчистка</p>
   </footer>
+
 </body>
 </html>
+
 
 
 
