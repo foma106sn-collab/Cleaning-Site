@@ -1,6 +1,132 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Виїзна Хімчистка</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+    header, section, footer {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+    }
+    h1 { font-size: 2.2em; margin-bottom: 10px; }
+    h2 { margin-bottom: 15px; }
+    .btn {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .service {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding: 15px;
+      width: 240px;
+    }
+    form input, form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    form button {
+      background: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background: rgba(255,255,255,0.2);
+      padding: 10px 15px;
+      border-radius: 50px;
+      transition: background 0.3s;
+    }
+    .social a:hover {
+      background: #28a745;
+    }
+    footer { font-size: 14px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Виїзна хімчистка авто, меблів та килимів</h1>
+    <p>Професійно. Швидко. Виїзд у зручний час!</p>
+    <a href="#contact" class="btn">Замовити</a>
+  </header>
+
+  <section>
+    <h2>Наші послуги</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Хімчистка авто</h3>
+        <p>Від 800 грн</p>
+      </div>
+      <div class="service">
+        <h3>М’які меблі</h3>
+        <p>Від 300 грн/місце</p>
+      </div>
+      <div class="service">
+        <h3>Килими</h3>
+        <p>Від 150 грн/м²</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Залишити заявку</h2>
+    <p>Телефон: <strong>(встав свій номер)</strong></p>
+    <form>
+      <input type="text" placeholder="Ваше ім'я" required><br>
+      <input type="tel" placeholder="Телефон" required><br>
+      <textarea placeholder="Ваше замовлення" rows="4"></textarea><br>
+      <button type="submit">Надіслати</button>
+    </form>
+    <div class="social">
+      <a href="https://t.me/твій_нік" target="_blank">Telegram</a>
+      <a href="viber://chat?number=+380XXXXXXXXX" target="_blank">Viber</a>
+      <a href="https://wa.me/380XXXXXXXXX" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Виїзна Хімчистка</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Виїзна Хімчистка</title>
@@ -199,4 +325,5 @@
   </footer>
 </body>
 </html>
+
 
