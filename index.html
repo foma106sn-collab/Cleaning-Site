@@ -6,17 +6,16 @@
   <title>Виїзна Хімчистка</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  background: url('./background.png') no-repeat center center fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
+      font-family: Arial, sans-serif;
+      background: url('./background.png') no-repeat center center fixed;
+      background-size: contain; /* або 80%, якщо краще */
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
     header, section, footer {
       background: rgba(0,0,0,0.6);
       padding: 20px;
@@ -48,16 +47,23 @@
       width: 240px;
     }
     .contacts {
-      margin-top: 25px;
+      margin: 25px 0;
     }
     .social-btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 12px 20px;
       margin: 5px;
       border-radius: 8px;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
+    }
+    .social-btn img {
+      width: 20px;
+      height: 20px;
     }
     .telegram { background: #0088cc; }
     .viber { background: #7360f2; }
@@ -71,7 +77,7 @@
     <a href="#services" class="btn">Замовити</a>
   </header>
 
-  <!-- Послуги внизу -->
+  <!-- Послуги -->
   <section id="services">
     <h2>Наші послуги</h2>
     <div class="services">
@@ -88,19 +94,27 @@
         <p>Від 150 грн/м²</p>
       </div>
     </div>
-
-    <!-- Соцмережі -->
-    <div class="contacts">
-      <h2>Зв’язатися з нами</h2>
-      <a href="https://t.me/username" class="social-btn telegram">Telegram</a>
-      <a href="viber://chat?number=%2B380XXXXXXXXX" class="social-btn viber">Viber</a>
-      <a href="https://wa.me/380XXXXXXXXX" class="social-btn whatsapp">WhatsApp</a>
-    </div>
   </section>
 
   <footer>
     <p>© 2025 Виїзна Хімчистка</p>
   </footer>
+
+  <!-- Соцмережі в самому низу -->
+  <div class="contacts">
+    <h2>Зв’язатися з нами</h2>
+    <a href="https://t.me/username" class="social-btn telegram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      Telegram
+    </a>
+    <a href="viber://chat?number=%2B380XXXXXXXXX" class="social-btn viber">
+      <img src="https://cdn-icons-png.flaticon.com/512/3670/3670059.png" alt="Viber">
+      Viber
+    </a>
+    <a href="https://wa.me/380XXXXXXXXX" class="social-btn whatsapp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      WhatsApp
+    </a>
+  </div>
 </body>
 </html>
-
