@@ -7,21 +7,31 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: url('./background.png') no-repeat center center fixed;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: #fff;
-      text-align: center;
+      background: url('./background.png') no-repeat center top;
+      background-size: cover;
       margin: 0;
       padding: 0;
+      color: #000;
     }
-    header, footer {
-      background: rgba(0,0,0,0.6);
-      padding: 20px;
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
     }
-    h1 { font-size: 2.2em; margin-bottom: 10px; }
-    h2 { margin-bottom: 15px; }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 0;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #eee;
+      margin: 10px 0;
+    }
+
     .btn {
       display: inline-block;
       background: #28a745;
@@ -32,9 +42,46 @@
       margin-top: 15px;
       font-weight: bold;
     }
-    .contacts {
-      margin: 25px 0;
+
+    /* Послуги зліва */
+    .services {
+      position: absolute;
+      top: 200px;
+      left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
+
+    .service {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 12px 18px;
+      border-radius: 8px;
+      width: 220px;
+      text-align: left;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .service h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+      color: #222;
+    }
+
+    .service p {
+      margin: 0;
+      font-size: 1em;
+      color: #333;
+    }
+
+    /* Соцмережі внизу */
+    .contacts {
+      text-align: center;
+      padding: 30px 10px;
+      background: #fff;
+      margin-top: 60vh;
+    }
+
     .social-btn {
       display: inline-flex;
       align-items: center;
@@ -47,28 +94,22 @@
       font-weight: bold;
       font-size: 16px;
     }
+
     .social-btn img {
       width: 20px;
       height: 20px;
     }
+
     .telegram { background: #0088cc; }
     .viber { background: #7360f2; }
     .whatsapp { background: #25d366; }
 
-    /* Сервіси тепер внизу */
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin: 20px auto 50px;
-    }
-    .service {
-      background: rgba(255,255,255,0.15);
-      border: 1px solid #fff;
-      border-radius: 10px;
-      padding: 15px;
-      width: 240px;
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #fff;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
@@ -79,9 +120,21 @@
     <a href="#contacts" class="btn">Замовити</a>
   </header>
 
-  <footer>
-    <p>© 2025 Виїзна Хімчистка</p>
-  </footer>
+  <!-- Послуги зліва -->
+  <div class="services">
+    <div class="service">
+      <h3>Хімчистка авто</h3>
+      <p>Від 800 грн</p>
+    </div>
+    <div class="service">
+      <h3>М’які меблі</h3>
+      <p>Від 300 грн/місце</p>
+    </div>
+    <div class="service">
+      <h3>Килими</h3>
+      <p>Від 150 грн/м²</p>
+    </div>
+  </div>
 
   <!-- Соцмережі -->
   <div id="contacts" class="contacts">
@@ -100,23 +153,8 @@
     </a>
   </div>
 
-  <!-- Послуги внизу -->
-  <section id="services">
-    <h2>Наші послуги</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Хімчистка авто</h3>
-        <p>Від 800 грн</p>
-      </div>
-      <div class="service">
-        <h3>М’які меблі</h3>
-        <p>Від 300 грн/місце</p>
-      </div>
-      <div class="service">
-        <h3>Килими</h3>
-        <p>Від 150 грн/м²</p>
-      </div>
-    </div>
-  </section>
+  <footer>
+    © 2025 Виїзна Хімчистка
+  </footer>
 </body>
 </html>
