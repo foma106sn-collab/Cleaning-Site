@@ -3,116 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Виїзна Хімчистка</title>
+  <title>Виїзна хімчистка</title>
   <style>
-    body {html, body {
-  height: 100%;
-}
-
+    body {
       font-family: Arial, sans-serif;
       background: url('./background.png') no-repeat center top;
-      background-size: cover;
+      background-size: contain; /* показує всю візитку */
+      background-attachment: fixed;
+      background-color: #ffffff; /* білий фон */
       margin: 0;
       padding: 0;
       color: #000;
+      text-align: center;
     }
 
     header {
-      text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 2.2em;
-      margin: 0;
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 1.1em;
-      color: #eee;
-      margin: 10px 0;
-    }
-
-    .btn {
-      display: inline-block;
+    .btn-order {
       background: #28a745;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 6px;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
       text-decoration: none;
-      margin-top: 15px;
+      font-size: 18px;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
     }
 
-    /* Послуги зліва */
     .services {
-      position: absolute;
-      top: 200px;
-      left: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      text-align: left;
+      max-width: 300px;
+      margin: 20px;
     }
 
     .service {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 12px 18px;
-      border-radius: 8px;
-      width: 220px;
-      text-align: left;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .service h3 {
-      margin: 0 0 5px;
-      font-size: 1.2em;
-      color: #222;
+      margin: 0 0 5px 0;
     }
 
-    .service p {
-      margin: 0;
-      font-size: 1em;
-      color: #333;
-    }
-
-    /* Соцмережі внизу */
     .contacts {
-      text-align: center;
-      padding: 30px 10px;
-      background: #fff;
-      margin-top: 60vh;
+      margin: 40px 0;
     }
 
-    .social-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    .contacts h2 {
+      margin-bottom: 20px;
+    }
+
+    .contacts a {
+      display: inline-block;
+      margin: 10px;
       padding: 12px 20px;
-      margin: 5px;
       border-radius: 8px;
       color: #fff;
-      text-decoration: none;
       font-weight: bold;
-      font-size: 16px;
+      text-decoration: none;
     }
 
-    .social-btn img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .telegram { background: #0088cc; }
-    .viber { background: #7360f2; }
-    .whatsapp { background: #25d366; }
+    .telegram { background: #229ED9; }
+    .viber { background: #7360F2; }
+    .whatsapp { background: #25D366; }
 
     footer {
-      text-align: center;
-      padding: 10px;
-      background: #fff;
-      font-size: 0.9em;
-      color: #555;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
@@ -120,11 +89,10 @@
   <header>
     <h1>Виїзна хімчистка авто, меблів та килимів</h1>
     <p>Професійно. Швидко. Виїзд у зручний час!</p>
-    <a href="#contacts" class="btn">Замовити</a>
+    <a href="#" class="btn-order">Замовити</a>
   </header>
 
-  <!-- Послуги зліва -->
-  <div class="services">
+  <section class="services">
     <div class="service">
       <h3>Хімчистка авто</h3>
       <p>Від 800 грн</p>
@@ -137,28 +105,17 @@
       <h3>Килими</h3>
       <p>Від 150 грн/м²</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Соцмережі -->
-  <div id="contacts" class="contacts">
+  <section class="contacts">
     <h2>Зв’язатися з нами</h2>
-    <a href="https://t.me/username" class="social-btn telegram">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-      Telegram
-    </a>
-    <a href="viber://chat?number=%2B380XXXXXXXXX" class="social-btn viber">
-      <img src="https://cdn-icons-png.flaticon.com/512/3670/3670059.png" alt="Viber">
-      Viber
-    </a>
-    <a href="https://wa.me/380XXXXXXXXX" class="social-btn whatsapp">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-      WhatsApp
-    </a>
-  </div>
+    <a href="#" class="telegram">Telegram</a>
+    <a href="#" class="viber">Viber</a>
+    <a href="#" class="whatsapp">WhatsApp</a>
+  </section>
 
   <footer>
     © 2025 Виїзна Хімчистка
   </footer>
 </body>
 </html>
-
